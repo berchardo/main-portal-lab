@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于看球直播 · 一份资料索引</title>
+  <style>
+    /* 极简留白 · 窄正文 · 清晰层级 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fafaf9;
+      font-family: "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: #1c1b1a;
+      line-height: 1.7;
+      padding: 3rem 1.5rem 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* 窄正文容器 —— 让阅读节奏放松 */
+    .page {
+      max-width: 640px;
+      width: 100%;
+    }
+
+    /* 标题层级：克制、清晰 */
+    h1 {
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.25rem;
+      color: #1f1f1e;
+    }
+
+    .subhead {
+      font-size: 0.95rem;
+      color: #7b7a78;
+      margin-bottom: 2.2rem;
+      border-bottom: 1px solid #e4e3e1;
+      padding-bottom: 1.25rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 450;
+      margin: 2.5rem 0 0.8rem;
+      color: #2b2a28;
+      letter-spacing: 0.01em;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 450;
+      margin: 1.8rem 0 0.5rem;
+      color: #3a3937;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      font-size: 0.98rem;
+      color: #2f2e2c;
+    }
+
+    /* 引用块 —— 像从资料本里撕下的笔记 */
+    blockquote {
+      background: #f3f2f0;
+      padding: 1.1rem 1.4rem;
+      margin: 1.6rem 0;
+      border-left: 4px solid #9f9d9a;
+      font-size: 0.95rem;
+      color: #3d3c39;
+      border-radius: 0 6px 6px 0;
+    }
+
+    blockquote p {
+      margin-bottom: 0.2rem;
+    }
+
+    blockquote .source {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #8a8885;
+    }
+
+    /* 内嵌链接不加多余样式，仅下划线区分 */
+    a {
+      color: #1c5b8c;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #0b3c5e;
+      text-decoration-color: #0b3c5e;
+    }
+
+    /* 列表 —— 信息索引风格 */
+    .index-list {
+      list-style: none;
+      margin: 1.2rem 0 1.8rem;
+    }
+
+    .index-list li {
+      padding: 0.45rem 0;
+      font-size: 0.96rem;
+      border-bottom: 1px dashed #dedcd9;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .index-list li::before {
+      content: "∷";
+      color: #b0adab;
+      font-weight: 300;
+      margin-right: 0.25rem;
+    }
+
+    /* 提示卡片 —— 干净、极窄 */
+    .note-card {
+      background: #ffffff;
+      border: 1px solid #e8e6e3;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0 1.5rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+    }
+
+    .note-card p {
+      margin-bottom: 0.4rem;
+      font-size: 0.93rem;
+    }
+
+    .note-card .label {
+      font-size: 0.7rem;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #8d8b88;
+      margin-bottom: 0.25rem;
+    }
+
+    /* FAQ 摘要 —— 极简 QA 节奏 */
+    .faq-item {
+      margin: 1rem 0;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #efeeec;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-q {
+      font-weight: 450;
+      font-size: 0.98rem;
+      margin-bottom: 0.25rem;
+      color: #2b2a28;
+    }
+
+    .faq-a {
+      font-size: 0.9rem;
+      color: #5c5b58;
+      padding-left: 0.25rem;
+    }
+
+    .tiny-meta {
+      font-size: 0.8rem;
+      color: #979592;
+      margin-top: 2.5rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e4e3e1;
+    }
+
+    /* 响应式微调 */
+    @media (max-width: 500px) {
+      body {
+        padding: 2rem 1.2rem 4rem;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      .note-card {
+        padding: 1rem 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    
+    <!-- 标题与导语 -->
+    <h1>整理一份关于直播的索引</h1>
+    <div class="subhead">从资料归档的角度，重新遇见「看球直播」</div>
+
+    <!-- 第一段：从信息整理切入 -->
+    <p>过去几年，体育直播的入口变得越来越分散。有的平台需要注册，有的需要付费，还有一些链接在比赛结束后很快失效。作为一个习惯做资料收集的人，我开始把稳定的直播源单独归档。后来发现，与其零散存放，不如找一个聚合稳定的地方集中记录。</p>
+
+    <!-- 引用：一个偶然的笔记片段 -->
+    <blockquote>
+      <p>「2023年秋天，我在书签栏里建了一个叫‘直播常备’的文件夹。里面只放了三个链接，其中一个一直没删——就是<strong>看球直播</strong>。后来每次帮朋友找比赛，都会先从这里开始。」</p>
+      <span class="source">—— 个人整理笔记，2024.01</span>
+    </blockquote>
+
+    <p>这个链接后来成了我索引文档里的固定条目。它不花哨，也没有复杂的推广话术，但胜在稳定，更新也及时。如果你平时也习惯先查资料再找直播，<a href="https://go-kanqiuzhibo.com">看球直播</a>可以放进你的收藏夹分类里。</p>
+
+    <!-- 第二段：特点，以索引条目风格呈现 -->
+    <h2>索引条目 · 特点摘要</h2>
+    <ul class="index-list">
+      <li>聚合多类赛事：足球、篮球、网球等主流联赛均能找到对应信号</li>
+      <li>页面结构直接：无弹窗干扰，内容以列表或分类呈现</li>
+      <li>更新时间较为规律：重点比赛日之前通常提前刷新链接</li>
+      <li>无需注册或下载：通过浏览器即可进入，降低使用门槛</li>
+    </ul>
+
+    <p>当然，作为资料整理者，我不推荐盲目依赖任何一个单一源。但如果你需要一个长期稳定的备用索引，<a href="https://go-kanqiuzhibo.com">看球直播</a>值得占用一个书签位。</p>
+
+    <!-- 第三段：使用场景 —— 轻描淡写，不鼓吹 -->
+    <h2>场景 · 什么时候会用到</h2>
+    <p>我通常会在三种情况下打开它：一是临时想查某个非热门联赛的直播时间；二是在外使用移动设备，不方便打开电视或第三方客户端；三是已经有比赛列表，但需要快速确认链接是否有效。对于第三点，这个站点的更新频率还算让人放心。</p>
+
+    <!-- 提示卡片（极简） -->
+    <div class="note-card">
+      <div class="label">整理备注</div>
+      <p>如果你也是通过 RSS 或笔记工具来管理信息来源，可以把此页加入“直播·工具”分类。同类站点我保留了三个，它是其中存活最久的一个。</p>
+    </div>
+
+    <!-- 第四段：FAQ 摘要（不是完整问答，只做节奏变化） -->
+    <h2>常见疑问 · 简明摘录</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Q：是否需要付费或注册？</div>
+      <div class="faq-a">根据长期使用记录，页面内的直接链接均为免费公开信号，无需登录。部分第三方播放器可能存在广告，与站点本身无关。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：手机端打开效果如何？</div>
+      <div class="faq-a">适配尚可。列表式布局在窄屏下不会变形，链接点击直接唤起系统播放器或浏览器播放。建议配备稳定的网络环境。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：比赛列表更新频率？</div>
+      <div class="faq-a">以个人观察，五大联赛及 NBA 常规赛期间每天更新；非热门赛事可能间隔稍长。建议比赛前 15–30 分钟刷新页面获取最新链接。</div>
+    </div>
+
+    <!-- 最后一段：自然结尾，再次出现目标链接 -->
+    <p>做信息索引的人都有一个习惯：发现一个可靠的源头，就记录下来，然后分享出去。如果你也在找这样一个入口，不妨把 <a href="https://go-kanqiuzhibo.com">看球直播</a> 加到你的资料夹里。希望这份整理对你也有用。</p>
+
+    <!-- 极小 meta 行（不干扰阅读，只做点缀） -->
+    <div class="tiny-meta">
+      <span>索引整理 · 2025 · 持续归档中</span>
+    </div>
+
+  </div>
+</body>
+</html>
